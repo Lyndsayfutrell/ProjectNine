@@ -5,14 +5,16 @@
 		"../scss/styles.scss",
 		"../scss/_index.scss",
 		"../scss/_variables.scss",
-		"../scss/_base.scss"
+		"../scss/_base.scss",
+		"../scss/_game.scss"
 	],
 	"sourcesContent": [
 		"@import 'index';",
-		"@import 'variables';\n@import 'base';",
-		"$main-color-dark: #273E47;\n$main-color-light: #84A59D;\n$font-color: #0C1713;\n$black: black;\n$white: white;\n$accent-color-dark: #714955;\n$accent-color-light: #D1ABAD;",
-		"body {\n    font-family: 'Work Sans', sans-serif;\n}\n\n.nav-link {\n    color: $accent-color-light;\n    &:hover {\n        color: $accent-color-dark;\n    }\n}\n\nbody {\n    background-color: $main-color-light;\n}\n\nh1 {\n    color: $white;\n}\n\nnav {\n    background-color: $main-color-dark;\n}\n\n.navbar-text {\n    color: $white;\n}\n\n.navbar-toggler {\n    border: none;\n\n}"
+		"@import 'variables';\n@import 'base';\n@import 'game';",
+		"$main-color-dark: #CBC8C8;\n$main-color-light: #A76BB0;\n$font-color: #0C1713;\n$black: black;\n$white: white;\n$accent-color-dark: #714955;\n$accent-color-light: #BCA0BB;\n",
+		"@font-face {\n    font-family: \"Silkscreen\";\n    src: url(\"../font/silkscreen/slkscr.ttf\") format(\"truetype\");\n\n    }\n\nbody {\n    font-family: 'Work Sans', sans-serif;\n}\n\n.nav-link {\n    color: $black;\n    &:hover {\n        cursor: pointer;\n    }\n}\n\na:active {\n    border-bottom: 1px solid $black;\n}\n\n\nh1 {\n    color: $black;\n}\n\n\n.navbar-text {\n    color: $white;\n}\n\n.navbar-toggler {\n    border: none;\n\n}",
+		""
 	],
 	"names": [],
-	"mappings": ";AGAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,uBAAuB;CACvC;;;AAED,AAAA,SAAS,CAAC;EACN,KAAK,EDCY,OAAO;CCG3B;;;AALD,AAEI,SAFK,AAEJ,MAAM,CAAC;EACJ,KAAK,EDFO,OAAO;CCGtB;;;AAGL,AAAA,IAAI,CAAC;EACD,gBAAgB,EDXD,OAAO;CCYzB;;;AAED,AAAA,EAAE,CAAC;EACC,KAAK,EDZD,KAAK;CCaZ;;;AAED,AAAA,GAAG,CAAC;EACA,gBAAgB,EDpBF,OAAO;CCqBxB;;;AAED,AAAA,YAAY,CAAC;EACT,KAAK,EDpBD,KAAK;CCqBZ;;;AAED,AAAA,eAAe,CAAC;EACZ,MAAM,EAAE,IAAI;CAEf"
+	"mappings": "AGAA,UAAU;EACN,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,oCAAoC,CAAC,kBAAkB;;;;AAIhE,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,uBAAuB;CACvC;;;AAED,AAAA,SAAS,CAAC;EACN,KAAK,EDRD,KAAK;CCYZ;;;AALD,AAEI,SAFK,AAEJ,MAAM,CAAC;EACJ,MAAM,EAAE,OAAO;CAClB;;;AAGL,AAAA,CAAC,AAAA,OAAO,CAAC;EACL,aAAa,EAAE,GAAG,CAAC,KAAK,CDfpB,KAAK;CCgBZ;;;AAGD,AAAA,EAAE,CAAC;EACC,KAAK,EDpBD,KAAK;CCqBZ;;;AAGD,AAAA,YAAY,CAAC;EACT,KAAK,EDxBD,KAAK;CCyBZ;;;AAED,AAAA,eAAe,CAAC;EACZ,MAAM,EAAE,IAAI;CAEf"
 }

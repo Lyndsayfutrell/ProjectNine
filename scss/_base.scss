@@ -1,25 +1,29 @@
+@font-face {
+    font-family: "Silkscreen";
+    src: url("../font/silkscreen/slkscr.ttf") format("truetype");
+
+    }
+
 body {
     font-family: 'Work Sans', sans-serif;
 }
 
 .nav-link {
-    color: $accent-color-light;
+    color: $black;
     &:hover {
-        color: $accent-color-dark;
+        cursor: pointer;
     }
 }
 
-body {
-    background-color: $main-color-light;
+a:active {
+    border-bottom: 1px solid $black;
 }
+
 
 h1 {
-    color: $white;
+    color: $black;
 }
 
-nav {
-    background-color: $main-color-dark;
-}
 
 .navbar-text {
     color: $white;
