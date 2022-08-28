@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/_index.scss",
+		"../scss/_variables.scss",
+		"../scss/_base.scss"
+	],
+	"sourcesContent": [
+		"@import 'index';",
+		"@import 'variables';\n@import 'base';",
+		"$main-color-dark: #273E47;\n$main-color-light: #84A59D;\n$font-color: #0C1713;\n$black: black;\n$white: white;\n$accent-color-dark: #714955;\n$accent-color-light: #D1ABAD;",
+		"body {\n    font-family: 'Work Sans', sans-serif;\n}\n\n.nav-link {\n    color: $accent-color-light;\n    &:hover {\n        color: $accent-color-dark;\n    }\n}\n\nbody {\n    background-color: $main-color-light;\n}\n\nh1 {\n    color: $white;\n}\n\nnav {\n    background-color: $main-color-dark;\n}\n\n.navbar-text {\n    color: $white;\n}\n\n.navbar-toggler {\n    border: none;\n\n}"
+	],
+	"names": [],
+	"mappings": ";AGAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,uBAAuB;CACvC;;;AAED,AAAA,SAAS,CAAC;EACN,KAAK,EDCY,OAAO;CCG3B;;;AALD,AAEI,SAFK,AAEJ,MAAM,CAAC;EACJ,KAAK,EDFO,OAAO;CCGtB;;;AAGL,AAAA,IAAI,CAAC;EACD,gBAAgB,EDXD,OAAO;CCYzB;;;AAED,AAAA,EAAE,CAAC;EACC,KAAK,EDZD,KAAK;CCaZ;;;AAED,AAAA,GAAG,CAAC;EACA,gBAAgB,EDpBF,OAAO;CCqBxB;;;AAED,AAAA,YAAY,CAAC;EACT,KAAK,EDpBD,KAAK;CCqBZ;;;AAED,AAAA,eAAe,CAAC;EACZ,MAAM,EAAE,IAAI;CAEf"
+}
