@@ -1,0 +1,3 @@
+modal for game
+arrow through projects - show 2/3 on large display?
+add movement

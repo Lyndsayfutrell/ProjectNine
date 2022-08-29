@@ -4,23 +4,21 @@
 }
 
 /* line 7, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
-body {
+html {
   font-family: 'Work Sans', sans-serif;
-}
-
-/* line 11, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
-.nav-link {
-  color: black;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 /* line 13, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
-.nav-link:hover {
-  cursor: pointer;
+body {
+  overscroll-behavior-y: none;
 }
 
-/* line 18, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
-a:active {
-  border-bottom: 1px solid black;
+/* line 16, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+section.container {
+  scroll-snap-align: center;
+  height: calc(100vh);
 }
 
 /* line 23, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
@@ -28,12 +26,111 @@ h1 {
   color: black;
 }
 
-/* line 28, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+/* line 27, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+svg {
+  width: 30px;
+}
+
+/* line 30, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+section.contact,
+section.skills {
+  height: 50vh;
+}
+
+/* line 33, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+section.contact div .col,
+section.skills div .col {
+  height: 50px;
+}
+
+/* line 37, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+svg {
+  width: 50px;
+}
+
+/* line 40, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+svg:hover > .icon {
+  transition: all 0.8s ease-in-out;
+  transform: rotateY(360deg);
+  transform-origin: 50% 50%;
+}
+
+/* line 48, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.icon {
+  fill: white;
+}
+
+/* line 54, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.html {
+  fill: #FFADAD;
+}
+
+/* line 57, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.css {
+  fill: #FFD6A5;
+}
+
+/* line 60, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.git {
+  fill: #9BF6FF;
+}
+
+/* line 63, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.boot {
+  fill: #FDFFB6;
+}
+
+/* line 66, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.sql {
+  fill: #A0C4FF;
+}
+
+/* line 69, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.java {
+  fill: #CAFFBF;
+}
+
+/* line 72, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.email {
+  fill: #BDB2FF;
+}
+
+/* line 75, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.git2 {
+  fill: #FFC6FF;
+}
+
+/* line 78, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+.linked {
+  fill: #CAFFBF;
+}
+
+/* line 1, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_nav.scss */
+.nav-link {
+  color: black;
+}
+
+/* line 3, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_nav.scss */
+.nav-link:hover {
+  cursor: pointer;
+}
+
+/* line 8, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_nav.scss */
+.navbar {
+  background-color: white;
+}
+
+/* line 12, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_nav.scss */
+.navbar-nav a.active {
+  border-bottom: 1px solid black;
+}
+
+/* line 18, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_nav.scss */
 .navbar-text {
   color: white;
 }
 
-/* line 32, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
+/* line 22, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_nav.scss */
 .navbar-toggler {
   border: none;
 }

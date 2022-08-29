@@ -4,32 +4,77 @@
 
     }
 
-body {
+html {
     font-family: 'Work Sans', sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+}
+body {
+    overscroll-behavior-y: none;
+}
+section.container {
+    scroll-snap-align: center;
+    height: calc(100vh);
 }
 
-.nav-link {
-    color: $black;
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-a:active {
-    border-bottom: 1px solid $black;
-}
 
 
 h1 {
     color: $black;
 }
 
-
-.navbar-text {
-    color: $white;
+svg {
+    width: 30px;
+}
+section.contact,
+section.skills {
+    height: 50vh;
+    div .col {
+        height: 50px;
+    }
+}
+svg {
+    width: 50px;
+    &:hover {
+    &> .icon {
+        transition: all 0.8s ease-in-out;
+        transform: rotateY(360deg); 
+        transform-origin: 50% 50%;
+    } 
+    }
 }
 
-.navbar-toggler {
-    border: none;
+ .icon{
+    fill: white;
+ }
 
+
+
+.html {
+    fill: #FFADAD;
+}
+.css {
+    fill: #FFD6A5;
+}
+.git {
+    fill:  #9BF6FF
+}
+.boot {
+    fill: #FDFFB6;
+}
+.sql {
+    fill: #A0C4FF;
+}
+.java {
+    fill:#CAFFBF;
+}
+.email {
+    fill: #BDB2FF;
+}
+.git2 {
+    fill: #FFC6FF;
+}
+.linked{
+    fill:#CAFFBF;
 }
