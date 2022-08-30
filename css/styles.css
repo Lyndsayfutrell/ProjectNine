@@ -1,41 +1,31 @@
-/* line 1, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 body {
   font-family: 'Work Sans', sans-serif;
 }
 
-/* line 5, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 .nav-link {
   color: #D1ABAD;
 }
 
-/* line 7, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 .nav-link:hover {
   color: #714955;
 }
 
-/* line 12, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 body {
   background-color: #84A59D;
 }
 
-/* line 16, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 h1 {
   color: white;
 }
 
-/* line 20, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 nav {
   background-color: #273E47;
 }
 
-/* line 24, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 .navbar-text {
   color: white;
 }
 
-/* line 28, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectNine/scss/_base.scss */
 .navbar-toggler {
   border: none;
 }
-
-/*# sourceMappingURL=styles.css.map */
