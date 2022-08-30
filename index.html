@@ -53,39 +53,45 @@
         <p>More about me</p>
         </section>
     <section class="pt-5 mt-3 gap-3 portfolio container text-center">
-        <div class="row">
         <h1 class="data-bs-target" id="portfolio">My Portfolio</h1>
-        <div class="col-md-4">
-            <h3>Project 1</h1>
-            <img>
-            <p>Description</p>
-            <a>View Project</a>
+        <div class="overlay hidden">
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+         <div class="modal-dialog container modal-dialog-centered">
+                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                <button class="modal-arrow1">&#62;</button>
+                <button class="modal-arrow2">&#60;</button>
+                <div class="modal-content">
+                    <img>
+                    <p></p>
+                    <a></a>
+                </div>   
+            </div>
         </div>
-        <div class="col-md-4">
-            <h3>Project 2</h1>
-            <img>
-            <p>Description</p>
-            <a>View Project</a>
+    </div>     
+        <div class="container-fluid projectImage">
+            <img src="./images/Project7.png">
+            <p>An interactive dashboard using advanced web techniques. This project contains tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.</p>
+            <a href="https://lyndsayfutrell.github.io/ProjectSeven/" target="_blank">View Project</a>
         </div>
-        <div class="col-md-4">
-            <h3>Project 3</h1>
-            <img>
-            <p>Description</p>
-            <a>View Project</a>
+        <div class="container-fluid hidden projectImage">
+            <img src="./images/Project8.png">
+            <p>Many sites — Twitter, Facebook, IMDB, and Wikipedia to name a few — offer a vast sea of data that you can access and display on your own web pages. This project is an employee directory that gets it's data through a third-party API.</p>
+            <a href="https://lyndsayfutrell.github.io/ProjectEight/" target="_blank">View Project</a>
         </div>
+        <div class="container-fluid hidden projectImage">
+            <img src="./images/Project6.png">
+            <p>A word guessing game. Try and guess the random phrase by entering different letters into the page.</p>
+            <a href="https://lyndsayfutrell.github.io/ProjectSix/" target="_blank">View Project</a>
         </div>
-        <div class="row">
-        <div class="col-md-6">
-            <h3>Project 4</h1>
-            <img>
-            <p>Description</p>
-            <a>View Project</a>
+        <div class="container-fluid hidden projectImage">
+            <img src="./images/Project5.png">
+            <p>An interactive photo gallery, these are common features of many websites, from photo sites to e-commerce applications. </p>
+            <a href="https://lyndsayfutrell.github.io/ProjectFive/" target="_blank">View Project</a>
         </div>
-        <div class="col-md-6">
-            <h3>Project 5</h1>
-            <img>
-            <p>Description</p>
-            <a>View Project</a>
+        <div class="container-fluid hidden projectImage">
+            <img src="./images/Project4.png">
+            <p>Sass is an important tool in a modern Front End Web Developer's toolbox. It's used by many developers to make styling web pages with CSS easier and faster. For this project SASS was utilized to create a style guide to speed up styling, layout and development.</p>
+            <a href="https://lyndsayfutrell.github.io/ProjectFour/" target="_blank">View Project</a>
         </div>
     </section>
     <section class="skills pt-5 gap-3 container text-center">
@@ -158,7 +164,7 @@
         <div class="container text-center">
             <div class="row">
               <div class="col-5 text-end">
-                <a>
+                <a href="mailto:lyndsayfutrell@gmail.com" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-envelope-heart" viewBox="-10 -10 35 35">
                         <circle transform = translate(-7.25,-7) class="circle email" cx="15" cy="15" r="15" fill="red" />
                         <g class="icon">
@@ -168,7 +174,7 @@
                     </a>
               </div>
               <div class="col-2">
-                <a>
+                <a href="https://github.com/Lyndsayfutrell" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-github" viewBox="-10 -10 35 35">
                         <circle transform = translate(-7.25,-7) class="circle git2" cx="15" cy="15" r="15" fill="red" />
                         <g class="icon">
@@ -178,7 +184,7 @@
                 </a>
               </div>
               <div class="col-5 text-start">
-               <a>
+               <a href="https://www.linkedin.com/in/lyndsay-futrell-0b196468/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-linkedin" viewBox="-10 -10 35 35">
                     <circle transform = translate(-7.25,-7) class="circle linked" cx="15" cy="15" r="15" fill="red" />
                     <g class="icon">
@@ -190,7 +196,7 @@
             </div>
           </div>
         </section>
-    <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
+    <script src="js/app.js"></script>
 </body>
 </html>
