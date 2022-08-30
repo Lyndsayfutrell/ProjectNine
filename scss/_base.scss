@@ -1,31 +1,28 @@
-body {
-    font-family: 'Work Sans', sans-serif;
-}
+@font-face {
+    font-family: "Silkscreen";
+    src: url("../font/silkscreen/slkscr.ttf") format("truetype");
 
-.nav-link {
-    color: $accent-color-light;
-    &:hover {
-        color: $accent-color-dark;
     }
-}
 
+html {
+    font-family: 'Work Sans', sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+}
 body {
-    background-color: $main-color-light;
+    overscroll-behavior-y: none;
+    
+}
+section.container {
+    scroll-snap-align: center;
+    height: calc(100vh);
 }
 
 h1 {
-    color: $white;
+    color: $black;
 }
 
-nav {
-    background-color: $main-color-dark;
-}
-
-.navbar-text {
-    color: $white;
-}
-
-.navbar-toggler {
-    border: none;
-
+.hidden {
+    display: none;
 }
