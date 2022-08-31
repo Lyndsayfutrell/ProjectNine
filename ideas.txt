@@ -1,3 +1,2 @@
 modal for game
-arrow through projects
 add movement

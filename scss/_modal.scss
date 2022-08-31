@@ -7,6 +7,7 @@
     width: 100%;
     padding-bottom:0;
     margin: auto;
+    
 }}
 .modal-close{
     grid-area: x;
@@ -48,7 +49,7 @@
     display: grid;
     width: 80%;
     margin: auto;
-    margin-top: 10em;
+    margin-top: 5em;
     grid-template-columns: 8% 85% 8%;
     align-items: center;
     grid-template-areas: 

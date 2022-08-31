@@ -7,17 +7,38 @@ const leftArrow = document.querySelector('.modal-arrow2');
 const rightArrow = document.querySelector('.modal-arrow1');
 const body = document.querySelector('body')
 let index = 0;
+const sticky = document.querySelector('.sticky-top');
+const p = document.querySelector('#update-text');
+vw();
 
 //functions
 
-function vh () {
-    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-    return vh;
-}
-
 function vw () {
-    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    return vw;
+    var newWidth = window.innerWidth;
+    if(newWidth >= 628 && newWidth <= 1024) {
+        for (i=0; i< container.length; i++) {
+            container[i].classList.remove("hidden");
+            container[i].classList.add('col-6');
+            container[i].classList.remove('col-4');
+            p.textContent = 'Click image to make larger';
+            
+        }
+    } else if (newWidth >= 1024){
+        for (i=0; i< container.length; i++) {
+            container[i].classList.remove("hidden");
+            container[i].classList.add('col-4');
+            container[i].classList.remove('col-6');
+            p.textContent = 'Click image to make larger';
+        }  
+    } else if (newWidth < 628) {
+        for (i=0; i< container.length; i++) {
+            container[i].classList.add("hidden");
+            container[i].classList.remove('col-4');
+            container[i].classList.remove('col-6');
+            p.textContent = 'Click image to view more projects';
+        } 
+        container[0].classList.remove('hidden');
+    }
 }
 
 
@@ -25,7 +46,6 @@ function vw () {
 
 function displayModal(index) {
     const modalHTML = container[index].innerHTML;
-    body.style.overflow = "hidden"
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
     return modalContainer;
@@ -62,5 +82,11 @@ leftArrow.addEventListener("click", e =>{
 
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
-    body.style.overflow("auto");
     });
+
+//Change portfolio display
+
+window.addEventListener('resize', () => {
+    vw();
+});
+

@@ -14,8 +14,8 @@ body {
 }
 
 section.container {
-  scroll-snap-align: center;
-  height: calc(100vh);
+  scroll-snap-align: start;
+  min-height: 100vh;
 }
 
 h1 {
@@ -103,7 +103,7 @@ h1 {
   display: grid;
   width: 80%;
   margin: auto;
-  margin-top: 10em;
+  margin-top: 5em;
   grid-template-columns: 8% 85% 8%;
   align-items: center;
   grid-template-areas: '. . x' '. content .' 'arrow2 content arrow1' '. content .';
@@ -120,7 +120,7 @@ svg {
 
 section.contact,
 section.skills {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 section.contact div .col,
@@ -191,10 +191,31 @@ a:hover {
   color: #BCA0BB;
 }
 
+.projectImage {
+  padding-top: 1em;
+  border: 1px gray solid;
+  border-radius: 5px;
+  margin: 1em;
+  width: 90%;
+}
+
+.projectImage img {
+  padding-top: 1em;
+  cursor: pointer;
+}
+
 @media (min-width: 628px) {
   .modal-dialog {
     width: 70%;
-    margin-top: 5em;
+    margin-top: 3em;
+  }
+  .port-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .port-container .projectImage {
+    width: 40%;
   }
 }
 
@@ -203,15 +224,18 @@ a:hover {
     margin-top: 2em;
   }
   .modal-content img {
-    width: 95%;
+    width: 80%;
+  }
+  .port-container .projectImage {
+    width: 29%;
   }
 }
 
 @media (min-width: 1281px) {
   .modal-dialog {
-    margin-top: .5em;
+    margin-top: .2em;
   }
   .modal-content img {
-    width: 80%;
+    height: 60%;
   }
 }
