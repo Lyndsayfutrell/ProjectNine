@@ -104,7 +104,7 @@ h1 {
   width: 80%;
   margin: auto;
   margin-top: 5em;
-  grid-template-columns: 8% 85% 8%;
+  grid-template-columns: 8% 80% 8%;
   align-items: center;
   grid-template-areas: '. . x' '. content .' 'arrow2 content arrow1' '. content .';
   background: #fff;
