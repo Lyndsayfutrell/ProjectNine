@@ -1,0 +1,54 @@
+@keyframes grow {
+
+  0%  {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}
+
+ @keyframes rotate {
+    0% {
+        transform: rotate(0);}
+    
+    100% {
+        transform: rotate(360deg);
+
+    }
+ }
+
+
+
+//svg styles
+svg.logo {
+    width: 100%;
+    display: block;
+}
+
+g.flower {
+    
+    animation: offset 5s linear forwards, grow .5s ease-out;
+    stroke: #d4917e;
+    stroke-width: 1;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+
+}
+
+.outer {
+    transform-origin: 50% 50%;
+    animation: grow .5s ease-out;
+    transform: rotate(360deg);
+    fill: black;
+}
