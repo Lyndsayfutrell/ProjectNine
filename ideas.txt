@@ -1,2 +1,0 @@
-modal for game
-add movement
