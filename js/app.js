@@ -5,7 +5,7 @@ const modalClose = document.querySelector(".modal-close");
 const overlay = document.querySelector(".overlay");
 const leftArrow = document.querySelector('.modal-arrow2');
 const rightArrow = document.querySelector('.modal-arrow1');
-const body = document.querySelector('body')
+const body = document.querySelector('body');
 let index = 0;
 const sticky = document.querySelector('.sticky-top');
 const p = document.querySelector('#update-text');
@@ -56,7 +56,7 @@ for (i=0; i< container.length; i++) {
     let index = i;
     container[i].addEventListener ('click', (e) => {
         displayModal(index);
-        })
+        });
 }
 //Arrow through Modal
 
@@ -68,7 +68,7 @@ rightArrow.addEventListener("click", e =>{
     index = 0;    
     displayModal(0);   
     }
-})
+});
 
 leftArrow.addEventListener("click", e =>{
     if (index != 0) {
@@ -78,7 +78,7 @@ leftArrow.addEventListener("click", e =>{
     index = 4;    
     displayModal(5);   
     }
-})
+});
 
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
@@ -124,10 +124,10 @@ const handleScrollAnimation = () => {
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+      hideScrollElement(el);
     }
-  })
-}
+  });
+};
 
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
