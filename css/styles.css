@@ -43,13 +43,15 @@ h1 {
 }
 
 .about .about-text p {
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .about .about-text img {
-  width: 100%;
+  width: 90%;
   border-radius: 2px;
   padding-bottom: 1em;
+  margin: auto;
 }
 
 .nav-link {
