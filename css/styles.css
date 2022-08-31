@@ -25,6 +25,24 @@ h1 {
   display: none;
 }
 
+.about-text {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.about-text p {
+  width: 50%;
+}
+
+.about-text img {
+  width: 40%;
+  border-radius: 2px;
+  padding-bottom: 1em;
+}
+
 .nav-link {
   color: black;
 }
