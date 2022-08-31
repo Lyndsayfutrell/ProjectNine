@@ -22,7 +22,7 @@ h1 {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .about {
@@ -51,14 +51,20 @@ h1 {
 }
 }
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
+.js-scroll {
     opacity: 0;
-    transition: 1s all ease;
+    transition: opacity 500ms;
   }
   
-  .reveal.active{
-    transform: translateY(0);
+  .js-scroll.scrolled {
     opacity: 1;
   }
+  
+  .scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+  }
+  
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+  }
+  
