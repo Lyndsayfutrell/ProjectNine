@@ -43,11 +43,11 @@ h1 {
 }
 
 .about .about-text p {
-  width: 50%;
+  width: 100%;
 }
 
 .about .about-text img {
-  width: 40%;
+  width: 100%;
   border-radius: 2px;
   padding-bottom: 1em;
 }
