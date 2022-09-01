@@ -1,6 +1,7 @@
 html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overscroll-behavior-y: none;
 }
 
 html body {
