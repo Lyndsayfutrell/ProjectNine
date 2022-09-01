@@ -23,7 +23,7 @@ function vw () {
             p.textContent = 'Click image to make larger';
             
         }
-    } else if (newWidth >= 1024){
+    } else if (newWidth >= 1023){
         for (i=0; i< container.length; i++) {
             container[i].classList.remove("hidden");
             container[i].classList.add('col-4');
@@ -36,8 +36,8 @@ function vw () {
             container[i].classList.remove('col-4');
             container[i].classList.remove('col-6');
             p.textContent = 'Click image to view more projects';
-        } 
-        container[0].classList.remove('hidden');
+        } container[0].classList.remove('hidden');
+      
     }
 }
 

@@ -1,6 +1,6 @@
 
 html {
-    scroll-snap-type: y mandatory;
+    
     overflow-y: scroll;
 body {
     font-family: 'Poppins', sans-serif !important;
@@ -10,6 +10,7 @@ body {
 }
 body {
     overscroll-behavior-y: none;
+    scroll-snap-type: y mandatory;
     
 }
 section.container {
@@ -43,7 +44,7 @@ h1 {
         font-size: 1.2em;
     }
     img {
-    width: 90%;
+    width: 80%;
     border-radius: 2px;
     padding-bottom: 1em;
     margin: auto;
