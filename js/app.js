@@ -134,3 +134,15 @@ window.addEventListener("scroll", () => {
   vw();
 });
 
+// var canScroll = true;
+//     var scrollContainer = document.querySelector('html')
+//     scrollContainer.addEventListener('wheel', function(e) {
+//     if (canScroll) {
+//         scrollContainer.scrollBy(0, e.deltaY);
+//         canScroll = false;
+//         setTimeout(() => {
+//             canScroll = true;
+//         }, 800);
+//     }
+//     e.preventDefault();
+//     }, { passive: false });

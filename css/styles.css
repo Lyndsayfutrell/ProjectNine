@@ -1,20 +1,8 @@
-html {
-
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-}
-
-html body {
+body {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 200;
-  overscroll-behavior-y: none;
-}
-
-
-section.container {
-  scroll-snap-align: start;
-  max-height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -45,11 +33,10 @@ h1 {
 .about .about-text p {
   width: 85%;
   margin: auto;
-  font-size: 1.2em;
 }
 
 .about .about-text img {
-  width: 90%;
+  width: 80%;
   border-radius: 2px;
   padding-bottom: 1em;
   margin: auto;
@@ -82,6 +69,7 @@ h1 {
 
 .navbar {
   background-color: white;
+  z-index: 1020;
 }
 
 .navbar-nav a.active {
@@ -94,6 +82,8 @@ h1 {
 
 .navbar-toggler {
   border: none;
+  position: relative;
+  z-index: 1;
 }
 
 .modal-content {
