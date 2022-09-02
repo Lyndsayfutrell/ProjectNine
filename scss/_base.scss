@@ -10,12 +10,13 @@ body{
 }
 
 
-// section.container {
+section.container {
     
-//     max-height: 100vh; 
-//     scroll-snap-align: start; 
-//     scroll-snap-stop: always;  
-// }
+    // max-height: 100vh; 
+    // scroll-snap-align: start; 
+    // scroll-snap-stop: always; 
+    scroll-margin-top: 10px; 
+}
 
 h1 {
     color: $black;
@@ -66,4 +67,9 @@ h1 {
   .scrolled.fade-in-bottom {
     animation: fade-in-bottom 1s ease-in-out both;
   }
-  
+  #home,
+  #about-container,
+  #portfolio
+   {
+    height: 95vh;
+  }

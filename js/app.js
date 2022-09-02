@@ -132,17 +132,46 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
   vw();
+  // setTimeout(scrolled(), 2000);
 });
 
-// var canScroll = true;
-//     var scrollContainer = document.querySelector('html')
-//     scrollContainer.addEventListener('wheel', function(e) {
-//     if (canScroll) {
-//         scrollContainer.scrollBy(0, e.deltaY);
-//         canScroll = false;
-//         setTimeout(() => {
-//             canScroll = true;
-//         }, 800);
-//     }
-//     e.preventDefault();
-//     }, { passive: false });
+// body.addEventListener('scroll', (e)=> {
+
+// });
+// function scrolled () {
+//   const about = document.getElementById('about-container');
+//   const home = document.getElementById('home');
+//   const portfolio = document.getElementById('portfolio');
+//   const scrolledY = window.scrollY;
+  
+//   if(scrolledY >0 || scrolledY <= 802){
+//     home.scrollIntoView({behavior: "auto", block: "start"});
+//     console.log(scrolledY); 
+//   } else if (scrolledY >=803 || scrolledY <= 1689){
+//     about.scrollIntoView(alignToTop);
+//   } else if (scrolledY >=1690 || scrolledY <= 2484){
+//     portfolio.scrollIntoView(alignToTop);
+//   }
+
+// }
+
+// body.addEventListener('scroll', (e)=> {
+//   var about = document.getElementById('about-container');
+//   var home = document.getElementById('home');
+//   var portfolio = document.getElementById('portfolio');
+//   var scrolledY = window.scrollY;
+//   console.log("it has been scrolled");
+//   if(scrolledY >0 || scrolledY <= 802){
+//     home.scrollIntoView(true);
+    
+//   } else if (scrolledY >=803 || scrolledY <= 1689){
+//     about.scrollIntoView(true);
+//   } else if (scrolledY >=1690 || scrolledY <= 2484){
+//     portfolio.scrollIntoView(true);
+//   }
+//   if(scrolledY){
+//     window.scroll(0, scrolledY - yourHeight);
+//   }
+
+// });
+
