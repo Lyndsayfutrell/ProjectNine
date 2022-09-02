@@ -1,18 +1,12 @@
 body {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 200;
-
-
-}
-
-html {
-  /* scroll-snap-type: y proximity !important;
-  overflow-y: scroll; */
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
+
 section.container {
-  /* scroll-margin-top: 2em;
-  scroll-snap-align: start !important; */
+  scroll-margin-top: 10px;
 }
 
 h1 {
@@ -70,8 +64,7 @@ h1 {
 }
 
 #home,
-#about-container,
-#portfolio {
+#about-container {
   height: 95vh;
 }
 
