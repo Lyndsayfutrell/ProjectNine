@@ -10,6 +10,7 @@
     z-index: 1020;
 
     &-nav {
+        z-index: 1021;
         a.active {
             border-bottom: 1px solid $black;
         }

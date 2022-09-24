@@ -81,6 +81,10 @@ h1 {
   z-index: 1020;
 }
 
+.navbar-nav {
+  z-index: 1021;
+}
+
 .navbar-nav a.active {
   border-bottom: 1px solid black;
 }
